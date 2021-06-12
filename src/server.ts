@@ -1,5 +1,8 @@
 import { AddressInfo } from 'net';
+import * as dotenv from 'dotenv';
 import app from './app';
+
+dotenv.config({ path: `${__dirname}/../.env` });
 
 const server = app.listen(3000, () => {
   if (server) {

@@ -18,6 +18,12 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "class-methods-use-this":"off",
+    "consistent-return":"off",
+    "@typescript-eslint/no-empty-function": "off",
+    "no-useless-constructor":"off",
+    "@typescript-eslint/no-empty-interface": 0,
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "no-use-before-define": "off",
