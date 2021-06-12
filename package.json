@@ -4,13 +4,14 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node dist/index.js",
-    "start:dev": "ts-node-dev 'src/index.ts"
+    "start": "yarn build && node dist/server.js",
+    "start:dev": "ts-node-dev src/server.ts"
   },
   "repository": "git@github.com:DiegoJunges/linkapi.git",
   "author": "Diego <diego.aviz@going2.com.br>",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.12",
     "@types/node": "^15.12.2",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",
@@ -23,5 +24,9 @@
     "prettier": "^2.3.1",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   }
 }
