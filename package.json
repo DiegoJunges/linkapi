@@ -1,0 +1,25 @@
+{
+  "name": "linkapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/index.js"
+  },
+  "repository": "git@github.com:DiegoJunges/linkapi.git",
+  "author": "Diego <diego.aviz@going2.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.2"
+  }
+}
