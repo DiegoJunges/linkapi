@@ -10,6 +10,16 @@ export class Request {
     return this.request.get<T, Response<T>>(url, config);
   }
 
+  public post<T>(
+    url: string,
+    data: any = {},
+    config: RequestConfig = {},
+  ): Promise<Response<T>> {
+    return this.request
+      .post<T, Response<T>>(url, data, config)
+      .then(response => response.data as unknown as Response<T>);
+  }
+
   public static isRequestError(error: AxiosError): boolean {
     return !!(error.response && error.response.status);
   }

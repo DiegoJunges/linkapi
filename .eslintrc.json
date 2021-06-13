@@ -18,6 +18,8 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "camelcase":"off",
+    "arrow-parens":"off",
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "class-methods-use-this":"off",
     "consistent-return":"off",
